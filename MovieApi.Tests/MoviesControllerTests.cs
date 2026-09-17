@@ -59,15 +59,15 @@ namespace MovieApi.Tests
             context.Movies.AddRange(
                 new Movie { Title = "The Matrix" },
                 new Movie { Title = "Inception" },
-                new Movie { Title = "Interstellar" }
+                new Movie { Title = "Gamyam" }
             );
             await context.SaveChangesAsync();
             var controller = new MoviesController(context);
-            var result = await controller.GetMovies( title:"Inception", genre: null, limit:10, page:1, sortby:null, sortbydirection: "asc");
+            var result = await controller.GetMovies( title:"Gamyam", genre: null, limit:10, page:1, sortby:null, sortbydirection: "asc");
             var okResult = Assert.IsType<OkObjectResult>(result);
             var response = Assert.IsType<PagedResult>(okResult.Value);
             Assert.Single(response.Movies);
-            Assert.Equal("Inception", response.Movies[0].Title);
+            Assert.Equal("Gamyam", response.Movies[0].Title);
         }
 
         
