@@ -12,6 +12,8 @@ Data is downloaded as CSV file and is saved in DataFiles folder.
 
 
 
+\- Visual Studio 2026
+
 \- .NET 8 / ASP.NET Core Web API
 
 \- Entity Framework Core
@@ -23,8 +25,6 @@ Data is downloaded as CSV file and is saved in DataFiles folder.
 \- xUnit
 
 \- Docker / Docker Compose
-
-
 
 \## Running with Docker
 
