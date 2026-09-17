@@ -68,11 +68,11 @@ docker compose down
 
 
 
-Endpoint 1 : GET: /api/Movies : This got below query params
+Endpoint 1 : GET: /api/Movies : This supports the following query parameters
 
 
 
-&#x09;title, genre, page, limit, sortby, sortby direction
+&#x09;title, genre, page, limit, sortby, sortbydirection
 
 &#x09;eg : GET /api/Movies?title=Batman\&genre=Action\&limit=5\&page=1
 
@@ -86,7 +86,7 @@ Endpoint 2 : GET: /api/Movies/popular?limit=10
 
 
 
-&#x09;You can do 'Run All tests' from menu or 
+&#x09;You can do 'Run All tests' from menu or
 
 &#x09;dotnet test (power shell)
 
@@ -97,8 +97,4 @@ Endpoint 2 : GET: /api/Movies/popular?limit=10
 
 
 The supplied dataset does not contain actor information, so filtering actor not been implemented. No data been changed from CSV.
-
-
-
-
 
